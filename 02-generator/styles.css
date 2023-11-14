@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: purple;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: purple;
+}
+
+/* Stylizace kontejneru */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: mediumaquamarine;
+    border-radius: 50px;
+    border-color: pink;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: moveQuotes 0.5s ease-in-out; 
+}
+
+/* Přidání klíče animace pro plynulý přechod mezi citáty */
+@keyframes moveQuotes {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Stylizace tlačítka */
+button {
+    background-color:purple;
+    color: mediumaquamarine;
+    border-radius: 20px;
+    border-color: pink;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Přidání stylů pro nový kontejner s všemi citáty */
+#allQuotes {
+    display: none;
+    margin-top: 20px;
+}

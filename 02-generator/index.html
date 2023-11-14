@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citáty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Kontejner pro obsah stránky -->
+    <div class="container">
+        <!-- Hlavní text kontejneru -->
+        <h1>Citáty</h1>
+        <!-- Zobrazení citátu -->
+        <p id="quote">Kliknutím na tlačítko se začne hned generovat citát.</p>
+        <!-- Tlačítko pro generování citátu -->
+        <button onclick="getRandomQuote()">Generovat</button>
+        <button onclick="showAllQuotes()">Zobrazit všechny citáty</button>
+        <button onclick="addNewQuote()">Přidat nový citát</button>
+        <button onclick="removeLastQuote()">Odebrat poslední citát</button>
+        <div id="allQuotes"></div>
+    </div>
+    <!-- Vložení JavaScriptového souboru -->
+    <script src="script.js"></script>
+</body>
+</html>
